@@ -10,11 +10,11 @@ require.config({
 
 require(['jquery','less'], function($) {
     $(function(){
+        var $container =  $('.container'),
+            $window = $(window),
+            $html = $('html,body');
 
-            var $container =  $('.container');
-            var $window = $(window);
 
-
-            $container.css({height:$window.height()});
+        $container.css({height:$html.height()});
     });
 });
